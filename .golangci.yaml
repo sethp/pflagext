@@ -1,0 +1,31 @@
+run:
+  modules-download-mode: readonly
+
+  fix: true
+
+linters:
+  enable:
+  - errname
+  - errorlint
+  - exhaustive
+  - exhaustivestruct
+  - exportloopref
+  - forbidigo
+  - gocritic
+  - godot
+  - godox
+  - gofumpt
+  - goimports
+  - gosec
+  - misspell
+  - nilerr
+  - nolintlint
+  - prealloc
+  - revive
+  - thelper
+  - unparam
+  - whitespace
+
+issues:
+  # see: https://github.com/golangci/golangci-lint/issues/456
+  exclude-use-default: false

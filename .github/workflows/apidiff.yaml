@@ -1,0 +1,10 @@
+name: apidiff
+
+on: [ pull_request ]
+
+jobs:
+  apidiff:
+    runs-on: ubuntu-latest
+    steps:
+    - name: go-apidiff
+      uses: joelanford/go-apidiff@v0.1.0
