@@ -6,5 +6,7 @@ jobs:
   apidiff:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
     - name: go-apidiff
       uses: joelanford/go-apidiff@v0.1.0
