@@ -1,5 +1,7 @@
 # pflagext
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/sethp/pflagext)](https://goreportcard.com/report/github.com/sethp/pflagext) [![Coverage Status](https://coveralls.io/repos/github/sethp/pflagext/badge.svg?branch=main)](https://coveralls.io/github/sethp/pflagext?branch=main) [![Go Reference](https://pkg.go.dev/badge/github.com/sethp/pflagext.svg)](https://pkg.go.dev/github.com/sethp/pflagext)
+
 Extensions to https://github.com/spf13/pflag
 
 ## Installation
