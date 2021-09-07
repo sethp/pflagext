@@ -44,6 +44,7 @@ func TestChoice(t *testing.T) {
 				return fs.ChoiceP("choice", "c", "default", "usage", "opt")
 			},
 			args:    []string{"-c", "not-an-opt"},
+			want:    "default", // We'll still set p to the default, even if we get a parse error
 			wantErr: true,
 		},
 	}
@@ -56,7 +57,7 @@ func TestChoice(t *testing.T) {
 				t.Errorf("fs.Parse(%#v) = %v, wantErr %v", tt.args, err, tt.wantErr)
 			}
 			if *got != tt.want {
-				t.Errorf("got = %v, want %v", got, tt.want)
+				t.Errorf("got = %q, want %q", *got, tt.want)
 			}
 		})
 	}
